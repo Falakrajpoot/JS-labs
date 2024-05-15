@@ -59,7 +59,7 @@ function printAllTodos() {
     todoListDiv[0].innerHTML = "";
     for (let i = 0; i < allTodos.length; i++) {
         todoListDiv[0].innerHTML +=
-            `<p>
+            `<p ID='todo-${i}'>
         ${allTodos[i]}
         <button onclick="editButton()">Edit</button>
         <button onclick="deleteButton()">Delete</button>
